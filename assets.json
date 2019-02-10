@@ -1,0 +1,10 @@
+{
+    "assets": {
+        "styles": [
+            "./src/assets/css/index.css"
+        ],
+        "scripts": [
+            "./src/assets/js/app.js"
+        ]
+    }
+}

@@ -1,3 +1,5 @@
+const assets = require('./assets');
+// console.log(assets);
 const gulp = require('gulp'),
     ejs = require("gulp-ejs"),
     concat = require('gulp-concat'),
@@ -16,16 +18,12 @@ gulp.task('buildHtml', function() {
 
 
 gulp.task('allCss', function() {
-    return gulp.src([
-        './src/assets/css/index.css'
-    ]).pipe(concat('all.css'))
+    return gulp.src(assets.assets.styles).pipe(concat('all.css'))
     .pipe(gulp.dest('./src/assets/'));
 });
 
 gulp.task('allJs', function() {
-    return gulp.src([
-        './src/assets/js/app.js'
-    ]).pipe(concat('all.js'))
+    return gulp.src(assets.assets.scripts).pipe(concat('all.js'))
     .pipe(gulp.dest('./src/assets/'));
 });
 
