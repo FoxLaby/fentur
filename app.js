@@ -11,8 +11,8 @@ app.set('view engine', 'ejs');// integrating ejs with express
 // use res.render to load up an ejs view file
 
 // index page 
-app.get('/', function(req, res) {
-    res.render('index');
+app.get('/:page.html', function(req, res) {
+    res.render(req.params.page);
 });
 
 app.listen(8080);
