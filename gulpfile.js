@@ -1,11 +1,7 @@
 const gulp = require('gulp'),
     ejs = require("gulp-ejs"),
-    concat = require('gulp-concat');
-// var gulpEjs = require('gulp-ejs-template');
-
-// var gulpCopy = require('gulp-copy');
-// var otherGulpFunction = require('gulp-other-function');
- 
+    concat = require('gulp-concat'),
+    nodemon = require('gulp-nodemon');
 
 gulp.task('assets', function() {
     return gulp.src(['./src/assets/**/*'])
@@ -26,5 +22,17 @@ gulp.task('allCss', function() {
     .pipe(gulp.dest('./src/assets/'));
 });
 
+gulp.task('serve', function (done) {
+    nodemon({
+        script: 'app.js',
+        ext: 'js html',
+        env: { 'NODE_ENV': 'development' },
+        done: done
+    })
+});
 
-gulp.task('default', ['build', 'allCss', 'assets']);
+gulp.task('default', ['serve', 'allCss']);
+
+gulp.task('build', ['build', 'allCss', 'assets']);
+
+gulp.watch('./src/assets/**/*.css', ['allCss']);

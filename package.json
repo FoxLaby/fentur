@@ -13,8 +13,9 @@
     "express": "^4.16.4",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
-    "gulp-copy": "^4.0.1",
-    "gulp-ejs": "^3.3.0",
-    "gulp-ejs-pages": "^0.1.1"
+    "gulp-ejs": "^3.3.0"
+  },
+  "devDependencies": {
+    "gulp-nodemon": "^2.4.2"
   }
 }
