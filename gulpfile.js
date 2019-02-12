@@ -4,7 +4,8 @@ const gulp = require('gulp'),
     ejs = require("gulp-ejs"),
     concat = require('gulp-concat'),
     nodemon = require('gulp-nodemon'),
-    cleanCSS = require('gulp-clean-css');
+    cleanCSS = require('gulp-clean-css'),
+    htmlbeautify = require('gulp-html-beautify');
 
 gulp.task('assets', function() {
     return gulp.src(['./src/assets/**/*.*'])
@@ -14,6 +15,7 @@ gulp.task('assets', function() {
 gulp.task('buildHtml', function() {
     return gulp.src("./src/pages/*.ejs")
     .pipe(ejs({ msg: 'Hello Gulp!'}, {}, { ext: '.html' }))
+    .pipe(htmlbeautify())
     .pipe(gulp.dest('./dist'));
 });
 

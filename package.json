@@ -13,7 +13,8 @@
     "express": "^4.16.4",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
-    "gulp-ejs": "^3.3.0"
+    "gulp-ejs": "^3.3.0",
+    "gulp-html-beautify": "^1.0.1"
   },
   "devDependencies": {
     "gulp-clean-css": "^4.0.0",
