@@ -5,6 +5,8 @@ const gulp = require('gulp'),
     concat = require('gulp-concat'),
     nodemon = require('gulp-nodemon'),
     cleanCSS = require('gulp-clean-css'),
+    // minify = require('gulp-minify'),
+    uglify = require('gulp-uglify'),
     htmlbeautify = require('gulp-html-beautify');
 
 gulp.task('assets', function() {
@@ -27,7 +29,9 @@ gulp.task('allCss', function() {
 });
 
 gulp.task('allJs', function() {
-    return gulp.src(assets.assets.scripts).pipe(concat('all.js'))
+    return gulp.src(assets.assets.scripts)
+    .pipe(concat('all.js'))
+    .pipe(uglify())
     .pipe(gulp.dest('./src/assets/'));
 });
 
