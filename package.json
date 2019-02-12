@@ -16,6 +16,7 @@
     "gulp-ejs": "^3.3.0"
   },
   "devDependencies": {
+    "gulp-clean-css": "^4.0.0",
     "gulp-nodemon": "^2.4.2"
   }
 }

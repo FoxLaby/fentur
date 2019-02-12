@@ -3,7 +3,8 @@ const assets = require('./assets');
 const gulp = require('gulp'),
     ejs = require("gulp-ejs"),
     concat = require('gulp-concat'),
-    nodemon = require('gulp-nodemon');
+    nodemon = require('gulp-nodemon'),
+    cleanCSS = require('gulp-clean-css');
 
 gulp.task('assets', function() {
     return gulp.src(['./src/assets/**/*.*'])
@@ -19,6 +20,7 @@ gulp.task('buildHtml', function() {
 
 gulp.task('allCss', function() {
     return gulp.src(assets.assets.styles).pipe(concat('all.css'))
+    .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest('./src/assets/'));
 });
 
