@@ -1,7 +1,7 @@
 {
     "assets": {
         "styles": [
-            "./src/assets/css/index.css"
+            "./src/assets/css/style.css"
         ],
         "scripts": [
             "./src/assets/js/app.js"
