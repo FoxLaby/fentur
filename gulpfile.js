@@ -37,7 +37,7 @@ gulp.task('allJs', function() {
 
 gulp.task('serve', function (done) {
     nodemon({
-        script: 'app.js',
+        script: 'index.js',
         ext: 'js html',
         env: { 'NODE_ENV': 'development' },
         done: done

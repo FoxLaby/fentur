@@ -15,5 +15,5 @@ app.get('/:page.html', function(req, res) {
     res.render(req.params.page);
 });
 
-app.listen(8080);
-console.log('8080 is the magic port');
+app.listen(8001);
+console.log('8001 is the magic port');
