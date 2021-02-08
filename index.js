@@ -4,7 +4,7 @@ var express = require('express');
 var app = express();
 
 // set the view engine to ejs
-app.use('/public', express.static('./src/assets'))
+app.use('/public', express.static('./dist/public'))
 app.set('views', './src/pages'); // telling express where to find template files 
 app.set('view engine', 'ejs');// integrating ejs with express
 
