@@ -1,13 +1,227 @@
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+a{
+ color: #00a8ff;
 }
 
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
+section.me{
+  width: 100%;
+  background: #f5f5f5;
+  background-image: url('./images/bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+section.me > .layer{
+  /* height: 100vh; */
+  background: rgb(255 255 255 / 91%);
+  padding: 99px 0px;
+}
+
+section.me .info{
+  width: auto;
+  text-align: center;
+  margin: 0px auto;
+}
+section.me .info > img.profile{
+  width: 290px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 33px;
+}
+section.me .info > h1{
+  color: #555;
+}
+section.me .info > h1 > span.karim{
+  background: #00a8ff;
+  /* border-radius: 5px; */
+  color: #fff;
+}
+section.me .info > h1 > span.mo{
+  background: #00a8ff;
+  /* border-radius: 5px; */
+  color: #fff;
+}
+
+section.me .info > h3{
+  color: #333;
+}
+section.me .info > h3 > span.karimo{
+  background: #0097e6;
+  /* border-radius: 5px; */
+  color: #fff;
+  padding: 0px 7px;
+}
+section.me .info > h3 > span.ninja{
+  background: #333;
+  /* border-radius: 5px; */
+  color: #fff;
+  padding: 0px 7px;
+}
+
+section.me .info > div.social{
+  width: auto;
+  margin-top: 33px;
+}
+section.me .info > div.social > a{
+  color: #555;
+  margin-right: 15px;
+  text-decoration: none;
+}
+section.me .info > div.social > a > svg{
+  width: 33px;
+  height: 33px;
+  color: #555;
+}
+
+
+section.blog{
+  background: #fff;
+  padding: 55px 0px;
+}
+section.blog > .section-header{
+  width: auto;
+  text-align: center;
+  margin-bottom: 99px;
+}
+section.blog > .section-header > h1.section-title{
+  color: #333;
+}
+section.blog .post{
+  width: auto;
+  background: #eee;
+  padding: 19px;
+}
+section.blog .post > .thumbnails{
+  width: auto;
+}
+section.blog .post > .thumbnails > img{
+  width: 100%;
+  height: auto;
+}
+section.blog .post > .thumbnails > h2{
+  color: #333;
+  margin: 0;
+  margin: 9px 0px;
+}
+section.blog .post > .thumbnails > p{
+  color: #aaa;
+  font-size: 15px;
+  margin: 0;
+}
+
+/* section.skills */
+section.objectives{
+  width: auto;
+  background-image: url('./images/bg-bjectives.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+section.objectives > .layer{
+  min-height: 350px;
+  max-height: 350px;
+  background: #333333dd;
+  padding: 33px;
+}
+section.objectives > .layer > h1{
+  color: #fff;
+  font-size: 23px;
+  margin: 0;
+  margin-bottom: 33px;
+}
+section.objectives > .layer > .objective{
+  color: #f5f5f5;
+  font-size: 17px;
+  border-left: 5px solid #f5f5f5;
+  padding-left: 17px;
+  margin-bottom: 33px;
+}
+section.objectives > .layer > .objective:last-child{
+  margin: 0px;
+}
+
+section.oss{
+  width: auto;
+  min-height: 350px;
+  max-height: 350px;
+  background: #f5f5f5;
+  overflow-y: scroll;
+  padding: 33px;
+}
+
+section.oss::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+section.oss::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+section.oss::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+section.oss::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+section.oss > h1.title{
+  border-left: 5px solid #333;
+  color: #0097e6;
+  padding-left: 17px;
+  margin-bottom: 33px;
+}
+section.oss > .projects{
+  width: auto;
+}
+section.oss > .projects > .project{
+  width: auto;
+  background: #fff;
+  border-left: 5px solid #0097e6;
+  /* color: #0097e6; */
+  padding: 15px;
+  padding-left: 15px;
+  margin-bottom: 33px;
+}
+section.oss > .projects > .project:last-child{
+  margin: 0px;
+}
+
+section.newsletter{
+  width: auto;
+  background: #fff;
+  background-image: linear-gradient(45deg, #107c1011, #0078d411, #ffb90011, #d83b0111);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 99px 0px;
+}
+section.newsletter .newsletter-info{
+  text-align: center;
+}
+section.newsletter .newsletter-info > .icon{
+  color: #00a8ff;
+}
+section.newsletter .newsletter-info > .icon > svg{
+  width: 90px;
+  height: 90px;
+}
+section.newsletter .newsletter-info > h2{
+  color: #333;
+}
+section.newsletter .newsletter-info > p{
+  color: #000;
+  font-size: 15px;
+}
+
+section.newsletter .newsletter-form{
+  width: auto;
+}
+section.newsletter .newsletter-form button{
+  background: #00a8ff;
+  border: #00a8ff;
 }
